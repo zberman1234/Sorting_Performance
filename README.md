@@ -2,7 +2,7 @@
 This java project analyzes the quicksort, heapsort, and radixsort algorithms and their time complexities. Each sorting algorithm is implemented as a static method in the Main class. 
 
 ## Graphs
-For each graph, the x axis n is the size of the random array to be sorted, and the y axis Time is in nanoseconds
+For each graph, the x axis n is the size of the random array to be sorted, and the y axis Time is the amount of time the sorting algorithm takes to sort that array in ascending order, in nanoseconds
 
 ![](quicksort.png)
 ![](heapsort1.png)

@@ -16,7 +16,7 @@ public class Main {
         for(int n = 1; n < maxN; n+=interval) {
             int[] arr = new int[n];
             for (int i = 0; i < n; i++) {
-                arr[i] = (int) (Math.random() * 10000);
+                arr[i] = (int) (Math.random() * 100);
             }
             long start = System.nanoTime();
             // quicksort(arr, 0, arr.length - 1);
@@ -41,6 +41,8 @@ public class Main {
         // JFreeChart chart = ChartFactory.createScatterPlot("Quicksort vs n", "n", "Time", dataset, PlotOrientation.VERTICAL, false, true, true);
         // graph the line of best fit using getOLSRegression()
         
+        // set y axis max to 4E8
+        chart.getXYPlot().getRangeAxis().setRange(0, 4E8);
 
         //draw the chart
         ChartFrame frame = new ChartFrame("Chart", chart);
