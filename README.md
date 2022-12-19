@@ -1,18 +1,9 @@
-## Getting Started
+# Relative time complexities of sorting algorithms
+This java project analyzes the quicksort, heapsort, and radixsort algorithms and their time complexities. Each sorting algorithm is implemented as a static method in the Main class. 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Graphs
+For each graph, the x axis n is the size of the random array to be sorted, and the y axis Time is in nanoseconds
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+![](heapsort.png)
+![](quicksort.png)
+![](radixsort.png)
