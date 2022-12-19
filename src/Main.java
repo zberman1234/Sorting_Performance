@@ -16,11 +16,11 @@ public class Main {
         for(int n = 1; n < maxN; n+=interval) {
             int[] arr = new int[n];
             for (int i = 0; i < n; i++) {
-                arr[i] = (int) (Math.random() * 100);
+                arr[i] = (int) (Math.random() * 10000);
             }
             long start = System.nanoTime();
-            quicksort(arr, 0, arr.length - 1);
-            heapSort(arr);
+            // quicksort(arr, 0, arr.length - 1);
+            // heapSort(arr);
             radixsort(arr, arr.length);
 
             long end = System.nanoTime();
@@ -36,8 +36,8 @@ public class Main {
            series.add(p.getX(), p.getY());
         }
         XYSeriesCollection dataset = new XYSeriesCollection(series);
-        // JFreeChart chart = ChartFactory.createScatterPlot("radixsort vs n", "n", "Time", dataset, PlotOrientation.VERTICAL, false, true, true);
-        JFreeChart chart = ChartFactory.createScatterPlot("heapsort vs n", "n", "Time", dataset, PlotOrientation.VERTICAL, false, true, true);
+        JFreeChart chart = ChartFactory.createScatterPlot("radixsort vs n", "n", "Time", dataset, PlotOrientation.VERTICAL, false, true, true);
+        // JFreeChart chart = ChartFactory.createScatterPlot("heapsort vs n", "n", "Time", dataset, PlotOrientation.VERTICAL, false, true, true);
         // JFreeChart chart = ChartFactory.createScatterPlot("Quicksort vs n", "n", "Time", dataset, PlotOrientation.VERTICAL, false, true, true);
         // graph the line of best fit using getOLSRegression()
         
